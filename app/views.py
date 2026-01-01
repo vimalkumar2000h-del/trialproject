@@ -10,5 +10,3 @@ def student_list(request):
     students = Students.objects.all()
     return render(request, 'app/student_list.html', {'students': students})
 
-def teacher_list(request):
-    return render(request, 'app/teacher_list.html')
